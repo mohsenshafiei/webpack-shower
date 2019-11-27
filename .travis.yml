@@ -16,4 +16,4 @@ after_success:
   - npm run release
 email: "$NPM_EMAIL"
 api_key: "$NPM_TOKEN"
-github_token: $GH_TOKEN
+github_token: "$GH_TOKEN"
