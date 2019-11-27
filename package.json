@@ -1,0 +1,99 @@
+{
+  "name": "webpack-shower",
+  "version": "0.0.1",
+  "description": "Clean up webpack output and filter and remove annoying stats",
+  "main": "dist/index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "prebuild": "rimraf dist .nyc_output coverage",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "babel --copy-files --out-dir dist src",
+    "dev": "webpack --config webpack.dev.js",
+    "lint": "eslint src",
+    "test": "cross-env NODE_ENV=test nyc mocha",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "watch:test": "mocha --watch",
+    "validate": "npm-run-all --parallel test build",
+    "release": "semantic-release && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mohsenshafiei/webpack-shower.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "webpack-shower",
+    "webpack-shower-plugin",
+    "clean-up-stats",
+    "filter-stats",
+    "remove-stats",
+    "sort-stats",
+    "organize-stats"
+  ],
+  "author": "mohsenshafiei (mohsenshafieitafreshi@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohsenshafiei/webpack-shower/issues"
+  },
+  "homepage": "https://github.com/mohsenshafiei/webpack-shower#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.4",
+    "babel-plugin-istanbul": "^5.2.0",
+    "chai": "^4.2.0",
+    "codecov": "^3.6.1",
+    "commitizen": "^4.0.3",
+    "cross-env": "^6.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.7.1",
+    "ghooks": "^2.0.4",
+    "mocha": "^6.2.2",
+    "npm-run-all": "^4.1.5",
+    "nyc": "^14.1.1",
+    "rimraf": "^3.0.0",
+    "semantic-release": "^15.13.31",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "statements": 100,
+    "all": true,
+    "instrument": false,
+    "sourceMap": false,
+    "require": [
+      "@babel/register"
+    ],
+    "include": [
+      "test/**/*.js"
+    ],
+    "exclude": [
+      "**/*.test.js"
+    ],
+    "reporter": [
+      "text",
+      "lcov"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run validate",
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0"
+  }
+}
