@@ -51,6 +51,8 @@ plugins: [new WebpackShower()];
 
 ```
 
+### Filtering Stats
+
 To filter annoying stats and annoying outputs
 
 ```javascript
@@ -72,6 +74,18 @@ available `options` are :
 - `errorsToFilter`
 - `entrypointsToFilter`
 
+### Sorting Stats
+
+You can sort assets and modules based on their size. In default mode, `Webpack-Shower` doesn't sort assets and modules.
+
+```javascript
+plugins: [
+  new WebpackShower({
+      sortAssets: true,
+      sortModules: true,
+  });
+]
+```
 
 [node]: https://img.shields.io/node/v/css-loader.svg
 [node-url]: https://nodejs.org
