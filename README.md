@@ -1,5 +1,5 @@
 <p align="center">
-  <img align="center" width="300" height="300" src="/assets/webpack-shower.jpeg">
+  <img align="center" width="300" height="300" src="/assets/webpack-shower.jpeg" />
 </p>
 
 [![version][version]][version-url]
@@ -11,13 +11,28 @@
 
 It gives you the ability to remove annoying Webpack outputs and organize, filter and prioritize those reports that we need.
 
-##### Installation
+### Installation
 
-```console
+```bash
 npm install webpack-shower --save-dev
 ```
 
-##### Configuration
+### What is in it for me?
+
+We all know that Webpack output is cool enough but we can turn that huge data to something useful like this:
+
+<p align="center">
+  <img
+    align="center"
+    width="300"
+    height="300"
+    src="/assets/terminal.png"
+  />
+</p>
+
+With `Webpack-Shower` you can remove those stats that are repetitive, annoying and noisy.
+
+### Configuration
 
 First you need to silent default Webpack output like below
 
@@ -61,8 +76,8 @@ available `options` are :
 
 [node]: https://img.shields.io/node/v/css-loader.svg
 [node-url]: https://nodejs.org
-[travis]: https://travis-ci.com/mohsenshafiei/webpack-shower.svg?branch=master
-[travis-url]: https://travis-ci.com/mohsenshafiei/webpack-shower.svg?branch=master
+[travis]: https://travis-ci.org/mohsenshafiei/webpack-shower.svg?branch=master
+[travis-url]: https://travis-ci.org/mohsenshafiei/webpack-shower.svg?branch=master
 [version]: https://img.shields.io/npm/v/webpack-shower.svg?style=flat-square
 [version-url]: http://npm.im/webpack-shower
 [downloads]: https://img.shields.io/npm/dm/webpack-shower.svg?style=flat-square
