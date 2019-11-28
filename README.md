@@ -9,9 +9,6 @@
 [![MIT LICENSE][mit]][mit-url]
 [![semantic-release][semantic-release]][semantic-release-url]
 
-
-## WEBPACK-SHOWER
-
 It gives you the ability to remove annoying Webpack outputs and organize, filter and prioritize those reports that we need.
 
 ##### Installation
