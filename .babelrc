@@ -7,7 +7,13 @@
   "env": {
     "test": {
       "plugins": [
-        "istanbul"
+        "istanbul",
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            "regenerator": true
+          }
+        ]
       ]
     }
   }
