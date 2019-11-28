@@ -33,7 +33,7 @@ const {
   logInfo,
 } = require('./lib/log.js');
 
-class FilterStatsPlugin {
+class WebpackShower {
   constructor(opts) {
     opts = opts || {};
     this.opts = {};
@@ -113,4 +113,4 @@ class FilterStatsPlugin {
   }
 }
 
-module.exports = FilterStatsPlugin;
+module.exports = WebpackShower;
