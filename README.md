@@ -24,8 +24,7 @@ We all know that Webpack output is cool enough but we can turn that huge data to
 <p align="center">
   <img
     align="center"
-    width="300"
-    height="300"
+    height="350"
     src="/assets/terminal.png"
   />
 </p>
