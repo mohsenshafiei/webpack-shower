@@ -1,4 +1,6 @@
-<img align="center" width="300" height="300" src="/assets/webpack-shower.jpeg">
+<p align="center">
+  <img align="center" width="300" height="300" src="/assets/webpack-shower.jpeg">
+</p>
 
 [![version][version]][version-url]
 [![node][node]][node-url]
