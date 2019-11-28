@@ -1,4 +1,4 @@
-![GitHub Logo](/public/assets/quark-loader-starfont.png)
+![GitHub Logo](/assets/webpack-shower.png)
 
 [![version][version]][version-url]
 [![node][node]][node-url]
