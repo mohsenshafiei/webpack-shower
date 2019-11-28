@@ -1,4 +1,4 @@
-![GitHub Logo](/assets/webpack-shower.png)
+<img align="center" width="300" height="300" src="/assets/webpack-shower.jpeg">
 
 [![version][version]][version-url]
 [![node][node]][node-url]
