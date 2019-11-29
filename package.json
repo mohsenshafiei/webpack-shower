@@ -98,6 +98,7 @@
     "access": "public"
   },
   "dependencies": {
-    "chalk": "^3.0.0"
+    "chalk": "^3.0.0",
+    "console.table": "^0.10.0"
   }
 }
