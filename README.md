@@ -87,6 +87,18 @@ plugins: [
 ]
 ```
 
+### Modes
+
+There are different modes to use. In default mode, `Webpack-Shower` use `normal` mode. If you want to use webpack-shower for reporting in CI like `Jenkins` or etc it is better to set `mode: 'table'`.
+
+```javascript
+plugins: [
+  new WebpackShower({
+    mode: 'table'
+  });
+]
+```
+
 [node]: https://img.shields.io/node/v/css-loader.svg
 [node-url]: https://nodejs.org
 [travis]: https://travis-ci.org/mohsenshafiei/webpack-shower.svg?branch=master
