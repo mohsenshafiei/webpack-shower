@@ -23,7 +23,7 @@ class WebpackShower {
       compiler.hooks.done.tapPromise("init", this.init.bind(this));
     } else {
       compiler.plugin("afterCompile", this.setStats.bind(this));
-      compiler.plugin("done", this.filterStats.bind(this));
+      compiler.plugin("done", this.init.bind(this));
     }
   }
 
