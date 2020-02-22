@@ -46,7 +46,7 @@ Second add the `Webpack-Shower` plugin to your Webpack configuration file
 
 ```javascript
 const WebpackShower = require('webpack-shower');
-//
+
 plugins: [new WebpackShower()];
 
 ```
@@ -89,7 +89,7 @@ plugins: [
 
 ### Modes
 
-There are different modes to use. In default mode, `Webpack-Shower` use `normal` mode. If you want to use webpack-shower for reporting in CI like `Jenkins` or etc it is better to set `mode: 'table'`.
+There are different modes to use. In default mode, `webpack-shower` use `normal` mode. If you want to use webpack-shower for reporting in other environments like `Jenkins` and etc it is better to set `mode: 'table'`.
 
 ```javascript
 plugins: [
