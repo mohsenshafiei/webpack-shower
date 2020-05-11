@@ -1,5 +1,5 @@
 <p align="center">
-  <img align="center" width="300" height="300" src="/assets/webpack-shower.jpeg" />
+  <img align="center" width="300" height="300" src="https://raw.githubusercontent.com/mohsenshafiei/webpack-shower/master/assets/webpack-shower.jpeg" />
 </p>
 
 [![version][version]][version-url]
